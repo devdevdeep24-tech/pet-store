@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Products - Pet Store</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- font awesome link foe icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+  body {
+    background: #0B132B;
+    color: #fdfdfd;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .navbar { background: #0B132B; }
+  .feature-card, .hero-card {
+    background: #DFF6F2;
+    color: #052A2B;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.35);
+  }
+  .hero-section {
+    padding: 5rem 0;
+  }
+  footer {
+    background: #071226;
+    color: #bbb;
+  }
+  footer a { color: #bbb; text-decoration: none; }
+  footer a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">🐾 PetPals</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Shop</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero-section d-flex align-items-center">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-10 hero-card text-center">
+        <h1 class="display-4">Welcome to PetPals</h1>
+        <p class="lead">Find the perfect toys, snacks, and accessories for your furry friends. Quality products at friendly prices!</p>
+        <a href="toy.html" class="btn btn-dark btn-lg mt-3">Shop Now</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Feature Cards -->
+<section class="py-5">
+    <h2 class="text-center mb-4" style="color:#ccc3c3; ">Explore  to Shop </h2><br>
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-md-4">
+          <div class="feature-card text-center">
+            <h5 class="fw-bold">Pet Beds</h5>
+            <p>Soft and comfy beds for small and large pets.</p>
+            <!-- Interactive button: Add to cart. JS reads data-* attributes to add item. -->
+            <button class="btn btn-sm btn-outline-dark add-to-cart" data-id="bed-1" data-name="Cozy Pet Bed" data-price="799" data-image="images/image1.png">Add to cart</button>
+          </div>
+        </div>
+      <div class="col-md-4">
+        <div class="feature-card text-center">
+          <h5 class="fw-bold">Food & Treats</h5>
+          <p>Healthy food, tasty treats.</p>
+          <!-- Interactive button: Add to cart. JS reads data-* attributes to add item. -->
+          <button class="btn btn-sm btn-outline-dark add-to-cart" data-id="food-1" data-name="Premium Dog Food" data-price="499" data-image="images/image1.png">Add to cart</button>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="feature-card text-center">
+          <h5 class="fw-bold">Accessories</h5>
+          <p>Collars, toys, and grooming tools.</p>
+          <!-- Interactive button: Add to cart. JS reads data-* attributes to add item. -->
+          <button class="btn btn-sm btn-outline-dark add-to-cart" data-id="toy-1" data-name="Cat Toy Bundle" data-price="299" data-image="images/image2.png">Add to cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="bg-light py-4">
+  <div class="container text-center">
+    <div class="mb-2">
+      <a href="index.html" class="text-dark mx-2">Home</a> |
+      <a href="about.html" class="text-dark mx-2">About</a> |
+      <a href="toy.html" class="text-dark mx-2">Products</a> |
+      <a href="contact.html" class="text-dark mx-2">Contact</a>
+    </div>
+
+    <!-- icons -->
+    <div class="mb-2">
+      <a href="https://wa.me/1234567890" target="_blank" class="text-dark mx-2">
+        <i class="fab fa-whatsapp fa-lg"></i>
+      </a>
+      <a href="https://instagram.com" target="_blank" class="text-dark mx-2">
+        <i class="fab fa-instagram fa-lg"></i>
+      </a>
+      <a href="https://facebook.com" target="_blank" class="text-dark mx-2">
+        <i class="fab fa-facebook fa-lg"></i>
+      </a>
+    </div>
+</div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<!-- local behavior -->
+<script src="script.js"></script>
+</body>
+</html>
